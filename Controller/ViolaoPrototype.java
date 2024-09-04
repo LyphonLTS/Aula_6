@@ -5,9 +5,9 @@ public abstract class ViolaoPrototype {
 
   public abstract void setAcustica(String acustica);
 
-  public abstract int getCordas();
+  public abstract int getCorda();
 
-  public abstract void setCordas(int cordas);
+  public abstract void setCorda(int corda);
 
   public abstract double getCusto();
 

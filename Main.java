@@ -36,13 +36,13 @@ class Main {
 
     // Violão sete cordas
     ViolaoPrototype violaoSeteCordas = violao.clone();
-    violaoSeteCordas.setCordas(7);
+    violaoSeteCordas.setCorda(7);
     violaoSeteCordas.setNivel("Intermediário");
 
     // Violão doze cordas
     ViolaoPrototype violaoDozeCordas = violao.clone();
     violaoDozeCordas.setAcustica("Pleno");
-    violaoDozeCordas.setCordas(12);
+    violaoDozeCordas.setCorda(12);
     violaoDozeCordas.setCusto(1800);
     violaoDozeCordas.setNivel("Profissional");
 

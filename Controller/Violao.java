@@ -2,7 +2,7 @@ package Controller;
 
 public class Violao extends ViolaoPrototype {
   private String acustica;
-  private int cordas;
+  private int corda;
   private double custo;
   private String estrutura;
   private String modelo;
@@ -11,7 +11,7 @@ public class Violao extends ViolaoPrototype {
 
   private Violao(Violao violao) {
     this.acustica = violao.acustica;
-    this.cordas = violao.cordas;
+    this.corda = violao.corda;
     this.custo = violao.custo;
     this.estrutura = violao.estrutura;
     this.modelo = violao.modelo;
@@ -21,7 +21,7 @@ public class Violao extends ViolaoPrototype {
 
   public Violao() {
     this.acustica = "Normal";
-    this.cordas = 6;
+    this.corda = 6;
     this.custo = 1300;
     this.estrutura = "Clássica";
     this.modelo = "Acústico";
@@ -40,13 +40,13 @@ public class Violao extends ViolaoPrototype {
   }
 
   @Override
-  public int getCordas() {
-    return cordas;
+  public int getCorda() {
+    return corda;
   }
 
   @Override
-  public void setCordas(int cordas) {
-    this.cordas = cordas;
+  public void setCorda(int corda) {
+    this.corda = corda;
   }
 
   @Override
@@ -105,7 +105,7 @@ public class Violao extends ViolaoPrototype {
 
   @Override
   public String toString() {
-    return "\nModelo: " + this.modelo + "\nNº de cordas: " + this.cordas + "\nTipo de corda: " + this.tipoCorda
+    return "\nModelo: " + this.modelo + "\nNº de cordas: " + this.corda + "\nTipo de corda: " + this.tipoCorda
         + "\nAcustica: " + this.acustica + "\nEstrutura: " + this.estrutura + "\nNível: " + this.nivel
         + "\nPreço: R$" + this.custo + "\n";
   }
